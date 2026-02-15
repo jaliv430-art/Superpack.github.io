@@ -9,8 +9,8 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: white; /* Changed background to white */
-            color: black; /* Adjusted text color for readability */
+            background: white;
+            color: black;
             overflow-y: scroll;
         }
 
@@ -22,7 +22,13 @@
             font-weight: bold;
             letter-spacing: 2px;
             border-bottom: 2px solid #ccc;
-            color: #007bff; /* Title is now blue */
+            color: #007bff;
+        }
+
+        .icon {
+            display: block;
+            margin: 20px auto 0 auto;
+            width: 120px;
         }
 
         .container {
@@ -73,7 +79,16 @@
 
 <body>
 
-    <header>Superpack</header>
+    <header>
+        Superpack
+        <!-- Cartoon Icon (SVG) -->
+        <svg class="icon" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#00aaff" stroke="#0077cc" stroke-width="4"/>
+            <circle cx="35" cy="40" r="8" fill="white"/>
+            <circle cx="65" cy="40" r="8" fill="white"/>
+            <rect x="30" y="60" width="40" height="10" rx="5" fill="white"/>
+        </svg>
+    </header>
 
     <div class="container">
 
@@ -107,7 +122,7 @@
     </div>
 
     <footer>
-        © 2026 Superpack — Made By The Borealis Empire
+        © 2026 Superpack — Made by The Borealis Empire
     </footer>
 
 </body>
